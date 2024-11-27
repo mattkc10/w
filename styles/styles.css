@@ -46,7 +46,7 @@ main {
 aside {
    width: 20rem;
    margin: 1rem;
-   border: var(--border) rgba(0, 0, 0, 0.2);
+   border: var(--border) rgba(0, 0, 0 / 0.2); /* 1 */
    padding: 1rem;
    background-color: #eee;
    color: #333;
@@ -54,7 +54,7 @@ aside {
 }
 
 aside img {
-    width: 150px;
+    width: 200px;
     height: auto;
 }
 
