@@ -185,6 +185,7 @@ footer {
   width: 55px;
 }
 .contacts img{
+  position: auto;
   align-self: center;
   padding: 1px;
   width:min-content;
@@ -192,11 +193,4 @@ footer {
   align-content: space-between;
 }
 
-.contacts img2 {
-  align-self: center;
-  padding: 1px;
-  width:min-content;
-  height: 250px;
-  align-content: space-between;
-}
 
