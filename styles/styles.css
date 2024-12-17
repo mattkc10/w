@@ -88,3 +88,6 @@ form {
     border-radius: 0.5rem;
     background-color: darkblue;
     display: grid;
+    justify-content: left;
+    align-self: auto;
+}
