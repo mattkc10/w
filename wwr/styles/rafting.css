@@ -103,7 +103,49 @@ nav a:hover {
   float: right;
   padding: 1em 0 0 1em;
 }
+.hero2 {
+  width: 100%;
+}
+.hero2 article {
+  position:absolute;
+  top: 350px;
+display: flex;
+  background-color: #e3e3e37e;
+  height: 350px;
+  width: 80%;
 
+  right: 0;
+  left: 0;
+  margin: auto 0;
+}
+.hero2 article img {
+  width: 200px;
+  border: black solid 1px;
+  
+
+}
+
+.hero2 article h2 {
+  top: 200px;
+}
+.hero2 h1 {
+  top: 200px;
+}
+.hero2 article figcaption {
+display: flex;
+}
+
+form {
+  width: 40rem;
+  margin: 0 auto;
+  padding: 1rem;
+  border: 1px solid rgb(0 0 0 / .01);
+  border-radius: 0.5rem;
+  background-color: darkblue;
+  display: grid;
+  justify-content: left;
+  align-self: auto;
+}
 p {
   padding: 10px;
   color: #000;
