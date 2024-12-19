@@ -1,59 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dry Oar Rafting | About Us</title>
-    <link rel="stylesheet" href="styles/rafting.css">
-    <meta name="description"
-        content="BYU-Idaho Student WDD130 course, home page site with links to my rafting site for planning your next rafting trip.">
-    <meta name="author" content="Matthew Cottrell">
-</head>
-
-<body>
-<header>
-    <img class="logo" src="images/river-logo.gif" alt="Welcome, to the rafting life.">
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="trips.html">Trips</a>
-        <a href="about.html">About Us</a>
-        <a href="contact.html"> Contact Us</a>
-    </nav>
-</header>
-
-<main>
-    <h1>Matthew Cottrell | WDD 130</h1>
-    <img src="images/profile_picture.webp" alt="Hello, my name is Matthew Cottrell" width="200">
-    <p>Hello! My name is Matthew Cottrell, I am from Utah. I enjoy sports, games, reading, and writing.  </p>
-
-    <aside class="box"> 
-        <h2>Salt Lake City, Utah, USA</h2>
-        <img src="images/salt_lake_city.jpg" alt="Hello, I am Matt Cottrell.">
-        <p>This is Salt Lake City, the capital of my state.</p>
-        <ul class="box">
-        <li><a href="https://churchofjesuschristtemples.org/salt-lake-temple/" target="blank">Salt Lake City Temple</a></li>
-        <li><a href="https://churchofjesuschristtemples.org/bountiful-utah-temple/" target="blank">Bountiful Utah Temple</a></li>
-        <li><a href="https://churchofjesuschristtemples.org/buenos-aires-argentina-temple/" target="blank">Buenos Aires Temple </a></li>   
-        </ul>
-    </aside>
-</main>
-
-    <footer>
-        <p>&copy;2024 | Matthew Cottrell | USA</p>
-        <nav class="sociallinks">
-            <a href="x.com">
-                <img src="images/X.webp" alt="X Website">
-            </a>
-            <a href="facebook.com">
-                <img src="images/facebook.webp" alt="Facebook Website">
-            </a>
-            <a href="instagram.com">
-                <img src="images/instagram.webp" alt="instagram Website">
-            </a>
-        </nav>
-    </footer>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dry Oar Rafting | About Us</title>
+        <link rel="stylesheet" href="styles/rafting.css">
+        <meta name="description"
+            content="BYU-Idaho Student WDD130 course, home page site with links to my rafting site for planning your next rafting trip.">
+        <meta name="author" content="Matthew Cottrell">
+    </head>
     
+    <body>
+    <header>
+        <img class="logo" src="images/river-logo.gif" alt="Welcome, to the rafting life.">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="trips.html">Trips</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html"> Contact Us</a>
+        </nav>
+    </header>
+  
+  <main>
+    <section class="hero">
+      <img src="images/river-narrow.jpg" alt="The Happy Rafting Company">
+      <h1>Your Adventure Awaits!</h1>
+    </section>
+    
+    <section class="newsletter-signup">
+      <h2>Sign up for our Newsletter</h2>
+      <form action="/subscribe" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+    
+    <section class="call-to-action">
+      <h2>Ready to Make a Splash?</h2>
+      <p>Join us for an unforgettable experience. <a href="week05/trips.html">Check out our trips!</a></p>
+    </section>
+    
+    <section class="info-grid">
+      <div>
+        <img src="images/rafting4.png" alt="Rafting Adventure 1" width="1">
+        <p>Experience the thrill of rafting.</p>
+      </div>
+      <div>
+        <img src="images/river-evening.jpg" alt="Rafting Adventure 2">
+        <p>Beautiful scenic views along the river.</p>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy;2024 | Matthew Cottrell | USA</p>
+    <nav class="sociallinks">
+    <a href="x.com">
+    <img src="images/X.webp" alt="X Website">
+    </a>
+    <a href="facebook.com">
+    <img src="images/facebook.webp" alt="Facebook Website">
+    </a>
+    <a href="instagram.com">
+    <img src="images/instagram.webp" alt="instagram Website">
+    </a>
+    </nav>
+    </footer>
 </body>
-
 </html>
