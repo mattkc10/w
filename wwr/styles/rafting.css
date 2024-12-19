@@ -1,94 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 
 :root {
-  --primary-color: #4bb3fd;
-  --secondary-color: #ffd64d;
-  --accent1-color: #063852;
-  --accent2-color: #f0810f;
-  
-  --heading-font: 'Nanum Gothic', sans-serif;
-  --paragraph-font: 'Nanum Gothic', sans-serif;
-  
-  --nav-background-color: #072a3a;
-  --nav-link-color: #0c1b33;
-  --nav-hover-link-color: #0c1b33;
-  --nav-hover-background-color: #ffb703;
-  }
-  
-  * {
-  box-sizing: border-box;
-  }
-  
-  body {
-  font-family: var(--paragraph-font);
-  }
-  
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-  font-family: var(--heading-font);
-  }
-  
-  p {
-  padding: 1em;
-  }
-  
-  img {
-  width: 100%;
-  }
-  header, main, footer {
-  max-width: 1000px;
-  margin: 0 auto;
-  }
-  header {
-  display: grid;
-  grid-template-columns: 150px auto;
-  align-items: center;
-  border-bottom: 1px solid #ccc;
-  background-color: var(--nav-background-color);
-  
-  gap: 1em;
-  }
-  
-  .logo {
-  width: 100px;
-  padding: 10px;
-  
-  }
-  nav {
-  display: flex;
-  justify-content: space-around;
-  background-color: var(--nav-background-color);
-  }
-  
-  nav a {
-  color:#fff;
-  padding: 1em;
-  text-decoration: none;
-  }
-  
-  nav a:hover {
-  color: #0c1b33;
-  
-  }
-  
-  
-  /* Class Selectors */
-  
-  .hero {
+--primary-color: #4bb3fd;
+--secondary-color: #ffd64d;
+--accent1-color: #063852;
+--accent2-color: #f0810f;
+
+--heading-font: 'Nanum Gothic', sans-serif;
+--paragraph-font: 'Nanum Gothic', sans-serif;
+
+--nav-background-color: #072a3a;
+--nav-link-color: #0c1b33;
+--nav-hover-link-color: #0c1b33;
+--nav-hover-background-color: #ffb703;
+}
+
+* {
+box-sizing: border-box;
+}
+
+body {
+font-family: var(--paragraph-font);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-family: var(--heading-font);
+}
+
+p {
+padding: 1em;
+}
+
+img {
+width: 100%;
+}
+header, main, footer {
+max-width: 1000px;
+margin: 0 auto;
+}
+header {
+display: grid;
+grid-template-columns: 150px auto;
+align-items: center;
+border-bottom: 1px solid #ccc;
+background-color: var(--nav-background-color);
+
+gap: 1em;
+}
+
+.logo {
+width: 100px;
+padding: 10px;
+
+}
+nav {
+display: flex;
+justify-content: space-around;
+background-color: var(--nav-background-color);
+}
+
+nav a {
+color:#fff;
+padding: 1em;
+text-decoration: none;
+}
+
+nav a:hover {
+color: #0c1b33;
+
+}
+
+
+/* Class Selectors */
+
+.hero {
   position: relative;
-  }
-  .hero img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero img {
   width: 100%;
   height: fit-content;
-  }
-  .hero2 img {
-  width: 100%;
-  }
-  .hero2 h1 {
+}
+
+.hero2 img {
+  width: fit-content;
+}
+
+.hero2 h1 {
   position: absolute;
   top: 100px;
   left: 0;
@@ -97,10 +103,9 @@
   height: 50px;
   padding-top: 10px;
   text-align: center;
-  
-  
-  }
-  .hero h1 {
+}
+
+.hero h1 {
   position: absolute;
   top: 50px;
   left: 20px;
@@ -108,71 +113,175 @@
   background-color: #e3e3e37e;
   padding: .5em 0;
   text-align: center;
-  }
-  .hero article {
-  position:absolute;
+}
+
+.hero article {
+  position: absolute;
   top: 150px;
   left: 20px;
   right: 20px;
   background-color: #e3e3e37e;
-  }
-  .hero article img {
+}
+
+.hero article img {
   width: 200px;
   float: right;
   padding: 1em 0 0 1em;
-  }
-  .hero2 {
+}
+
+.hero2 {
   width: 100%;
   position: relative;
-  }
-  
-  .staff {
-  
-  width: 80%;
-  
-  }
-  
-  .staff div {
+
+.staff {
+
+width: 80%;
+
+}
+
+.staff div {
+display: flex;
+flex-flow: row;
+top: 400px;
+position: absolute;
+
+background-color: #e3e3e37e;
+margin: 0 auto;
+right: 0;
+left: 0;
+height: 300px;
+}
+
+.staff figure {
+border: thin var(--secondary-color) solid;
+padding: 5px;
+max-height: 200px;
+margin: auto;
+}
+
+.staff figure img {
+max-height: 200px;
+}
+
+.staff figcaption {
+background-color: var(--primary-color);
+color: #fff;
+padding: 3px;
+text-align: center;
+}
+.staff h2 {
+top: 350px;
+position: absolute;
+background-color: #e3e3e37e;
+font-size:xx-large;
+text-align: center;
+right: 0;
+left: 0;
+
+}
+form {
+width: 40rem;
+margin: 0 auto;
+padding: 1rem;
+border: 1px solid rgb(0 0 0 / .01);
+border-radius: 0.5rem;
+background-color: darkblue;
+display: grid;
+justify-content: left;
+align-self: auto;
+}
+p {
+padding: 10px;
+color: #000;
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+user agent stylesheet
+p {
+display: block;
+margin-block-start: 1em;
+margin-block-end: 1em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+unicode-bidi: isolate;
+}
+img {
+width: 100%;
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+.history {
+display: grid;
+grid-template-columns: 2fr 1fr 2fr;
+gap: 2em;
+margin: 50px 0;
+}
+
+.history h2 {
+grid-column: 1 / -1;
+justify-self: center;
+padding: 1em 0;
+}
+
+.history p {
+align-self: first baseline;
+align-content: space-between;
+}
+.history img {
+width: 250px;
+}
+
+.adventure {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+gap: 20px;
+}
+
+.adventure h2 {
+grid-column: 1/-1;
+}
+
+figure {
+margin: 0;
+padding: 0;
+}
+
+footer {
+display: flex;
+background-color: #3e3e3e;
+padding: 20px;
+align-items: center;
+justify-content: space-between;
+color: #fff;
+}
+
+.sociallinks {
+background-color: unset;
+justify-self: end;
+}
+
+.sociallinks img {
+width: 55px;
+}
+.contacts {
   display: flex;
-  flex-flow: row;
-  top: 400px;
-  position: absolute;
-  
-  background-color: #e3e3e37e;
-  margin: 0 auto;
-  right: 0;
-  left: 0;
-  height: 300px;
-  }
-  
-  .staff figure {
-  border: thin var(--secondary-color) solid;
-  padding: 5px;
-  max-height: 200px;
-  margin: auto;
-  }
-  
-  .staff figure img {
-  max-height: 200px;
-  }
-  
-  .staff figcaption {
-  background-color: var(--primary-color);
-  color: #fff;
-  padding: 3px;
-  text-align: center;
-  }
-  .staff h2 {
-  top: 350px;
-  position: absolute;
-  background-color: #e3e3e37e;
-  font-size:xx-large;
-  text-align: center;
-  right: 0;
-  left: 0;
-  
-  }
-  form {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contacts img {
+  padding: 1px;
+  width: min-content;
+  height: 250px;
+}
+form {
   width: 40rem;
   margin: 0 auto;
   padding: 1rem;
@@ -182,92 +291,40 @@
   display: grid;
   justify-content: left;
   align-self: auto;
-  }
-  p {
-  padding: 10px;
+}
+
+main {
+  width: 840px;
+}
+
+aside {
+ width: 40rem;
+ margin: 1rem;
+ border: var(--border) rgba(0, 0, 0 / 0.2); /* 1 */
+ padding: 1rem;
+ background-color: #eee;
+ color: #333;
+ text-align: center; 
+}
+
+aside img {
+  width: 200px;
+  height: auto;
+}
+
+aside h2 {
+  position: absolute;
+  top: 47px;
+  left: 150px;
+}
+.box {
+  margin: 1rem;
+  border: 1px solid rgb(0 0 0 / 0.1);
+  padding: 1rem;
+  background-color: #ddd;
   color: #000;
-  }
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  }
-  user agent stylesheet
-  p {
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  unicode-bidi: isolate;
-  }
-  img {
-  width: 100%;
-  }
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  }
-  
-  .history {
-  display: grid;
-  grid-template-columns: 2fr 1fr 2fr;
-  gap: 2em;
-  margin: 50px 0;
-  }
-  
-  .history h2 {
-  grid-column: 1 / -1;
-  justify-self: center;
-  padding: 1em 0;
-  }
-  
-  .history p {
-  align-self: first baseline;
-  align-content: space-between;
-  }
-  .history img {
-  width: 250px;
-  }
-  
-  .adventure {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  }
-  
-  .adventure h2 {
-  grid-column: 1/-1;
-  }
-  
-  figure {
-  margin: 0;
-  padding: 0;
-  }
-  
-  footer {
-  display: flex;
-  background-color: #3e3e3e;
-  padding: 20px;
-  align-items: center;
-  justify-content: space-between;
-  color: #fff;
-  }
-  
-  .sociallinks {
-  background-color: unset;
-  justify-self: end;
-  }
-  
-  .sociallinks img {
-  width: 55px;
-  }
-  .contacts img{
-  position: auto;
-  align-self: center;
-  padding: 1px;
-  width:min-content;
-  height: 250px;
-  align-content: space-between;
+
+  header, footer {
+    max-width: 840px;
+    margin: 0 auto;
   }
