@@ -33,16 +33,54 @@ content="BYU-Idaho Student WDD130 course, home page site with links to my raftin
 
 
 <figure><img src="images/visit-us.webp" alt="visit-us">
-<figcaption>Visit us!</figcaption></figure>
+<figcaption>Visit us at 123 Fake Street, Salt Lake City, 84116!</figcaption></figure>
 <figure><img src="images/email_us.webp" alt="email-us">
-<figcaption>Email Us!</figcaption></figure>
+<figcaption>Email Us at help@happyrafting.com!</figcaption></figure>
 <figure><img src="images/call_us.webp" alt="call-us">
-<figcaption>Call Us!</figcaption></figure>
+<figcaption>Call Us! Our number is 555-444-2222</figcaption></figure>
 </div>
 </section>
 </div>
 <div class="map">
 <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d23742191.18992232!2d-124.23012400000002!3d43.414299!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1734554619701!5m2!1sen!2sus" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+
+<section class="contact-form">
+    <h2>Contact Us</h2>
+    <form action="/submit" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+  
+      <fieldset>
+        <legend>Purpose of Message:</legend>
+        <label>
+          <input type="radio" name="purpose" value="general" required>
+          General Inquiry
+        </label>
+        <label>
+          <input type="radio" name="purpose" value="reservation">
+          Reservation Question
+        </label>
+        <label>
+          <input type="radio" name="purpose" value="suggestion">
+          Website Suggestion
+        </label>
+      </fieldset>
+  
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+  
+      <label>
+        <input type="checkbox" name="subscribe" value="yes">
+        Please subscribe me to the monthly newsletter
+      </label>
+  
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
 </main>
 
 <footer>
