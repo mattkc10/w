@@ -271,3 +271,50 @@ width:min-content;
 height: 250px;
 align-content: space-between;
 }
+
+.trip-grid {
+  display: grid;
+  grid-template-areas:
+    'large-trip'
+    'small-trip1'
+    'small-trip2';
+  grid-gap: 1em;
+}
+
+.large-trip {
+  grid-area: large-trip;
+  background-color: var(--primary-color);
+  padding: 1em;
+}
+
+.small-trip:nth-child(2) {
+  grid-area: small-trip1;
+  background-color: var(--secondary-color);
+  padding: 1em;
+}
+
+.small-trip:nth-child(3) {
+  grid-area: small-trip2;
+  background-color: var(--accent1-color);
+  padding: 1em;
+}
+
+.trip {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.trip img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 600px) {
+  .trip-grid {
+    grid-template-areas:
+      'large-trip large-trip small-trip1'
+      'large-trip large-trip small-trip2';
+    grid-template-columns: 2fr 2fr 1fr;
+  }
+}
